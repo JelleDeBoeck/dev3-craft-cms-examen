@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 6e95435f-b6f7-400c-b26d-273ca203bea7 # Products
+handle: shop
+maxAuthors: 1
+name: Shop
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  831239cc-896f-4292-8653-de842081d524: # Funbags
+    enabledByDefault: true
+    hasUrls: true
+    template: home.twig
+    uriFormat: 'products/{slug}'
+type: channel

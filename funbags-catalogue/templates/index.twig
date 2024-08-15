@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{{ siteUrl }}static/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">FUNBAGS</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navbar">
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#about">Over</a></li>
+            <li><a href="#faq">Faq</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="icons">
+            <a href="#"><i class='bx bx-search'></i></a>
+            <a href="#"><i class='bx bxs-user-circle' ></i></a>
+            <a href="#"><i class='bx bxs-shopping-bag' ></i></a>
+        </div>
+    </header>
+
+    {% block content %}
+
+        {# Templates komen hier #}
+
+    {% endblock %}
+
+    <section class="contact" id="contact">
+        <div class="main-contact">
+            <div class="contact-content">
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Over</a></li>
+                <li><a href="#">Faq</a></li>
+                <li><a href="#">Contact</a></li>
+            </div>
+
+            <div class="contact-content">
+                <li><a href="#">Shipping & Returns</a></li>
+                <li><a href="#">Story Policy</a></li>
+                <li><a href="#">Payment Methods</a></li>
+            </div>
+
+            <div class="contact-content">
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Tel: 123-456-7890</a></li>
+            </div>
+
+            <div class="contact-content">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Pinterest</a></li>
+            </div>
+        </div>
+
+        <div class="action">
+            <form>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="submit" name="submit" value="Verstuur" required>
+            </form>
+        </div>
+    </section>
+
+    <div class="last">
+        <p>Made by Jelle.</p>
+    </div>
+
+    <script src="{{ siteUrl }}static/js/script.js"></script>
+</body>
+</html>

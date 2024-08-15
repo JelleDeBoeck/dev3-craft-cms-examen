@@ -1,0 +1,99 @@
+color: red
+fieldLayouts:
+  4f1edfd9-91a3-45f0-94db-4d9aae6d6d9e:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-08-14T11:56:59+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 00aa2f4e-4350-484a-937a-4f2e356de99b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-14T12:13:42+00:00'
+            elementCondition: null
+            fieldUid: dee0986a-bdb4-4519-8c7d-dc7ba7d8d8bf # Product Title
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ccadf8d0-0c64-4ed2-8bf6-c7c297f9e84c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-14T11:54:49+00:00'
+            elementCondition: null
+            fieldUid: 1743665a-a114-4ac5-bc69-a80945dbd9bf # Product Image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9f3544f0-1735-46b4-9100-d6af15edd40f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-14T11:54:49+00:00'
+            elementCondition: null
+            fieldUid: a4060432-d1d9-4b4e-ac73-d9f4de596fa5 # Product Price
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 861ff6c2-4b27-4950-96bf-2166fee86f15
+            userCondition: null
+            warning: null
+            width: 100
+        name: Product
+        uid: 385a500f-fa98-4923-b15f-4359e0c63ed1
+        userCondition: null
+handle: products
+hasTitleField: true
+icon: ''
+name: Products
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

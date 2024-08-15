@@ -1,0 +1,47 @@
+dateModified: 1723638121
+email:
+  fromEmail: deboeck07011@gmail.com
+  fromName: Funbags
+  transportType: craft\mail\transportadapters\Sendmail
+fs:
+  uploads:
+    hasUrls: true
+    name: Uploads
+    settings:
+      path: '@webroot/uploads'
+    type: craft\fs\Local
+    url: '@web/uploads'
+meta:
+  __names__:
+    5a5d8da4-5048-417a-949e-82310d87a858: Funbags # Funbags
+    6e95435f-b6f7-400c-b26d-273ca203bea7: Products # Products
+    8c0b9121-2d47-4e0b-99d6-16250224f4ab: 'About Title' # About Title
+    0553be1b-41c9-4aa3-a97a-84f9449e48a6: Uploads # Uploads
+    679aab28-b761-43bd-acf8-a822187c2b74: Home # Home
+    831239cc-896f-4292-8653-de842081d524: Funbags # Funbags
+    1743665a-a114-4ac5-bc69-a80945dbd9bf: 'Product Image' # Product Image
+    7333571f-5302-48bb-806b-90a78c78ed4c: Shop # Shop
+    a4060432-d1d9-4b4e-ac73-d9f4de596fa5: 'Product Price' # Product Price
+    ae604e79-892c-4536-aacc-f5e3de11dbfb: Home # Home
+    b4bea286-5d69-4b4b-abd4-69497b435efe: Simple # Simple
+    bc3a72f1-c7c7-42f7-adc5-cf28d9b70a11: 'About Description' # About Description
+    d8b9a291-5cea-4702-ac39-3a15a20ec98b: 'Public Schema' # Public Schema
+    dee0986a-bdb4-4519-8c7d-dc7ba7d8d8bf: 'Product Title' # Product Title
+plugins:
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0.0
+system:
+  edition: solo
+  live: true
+  name: Funbags
+  schemaVersion: 5.3.0.2
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  require2fa: false
+  requireEmailVerification: true
