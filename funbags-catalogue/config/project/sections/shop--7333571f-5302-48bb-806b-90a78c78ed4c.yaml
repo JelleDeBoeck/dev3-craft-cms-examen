@@ -22,6 +22,6 @@ siteSettings:
   831239cc-896f-4292-8653-de842081d524: # Funbags
     enabledByDefault: true
     hasUrls: true
-    template: home.twig
+    template: products.twig
     uriFormat: 'products/{slug}'
 type: channel
