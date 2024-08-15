@@ -1,4 +1,4 @@
-dateModified: 1723638121
+dateModified: 1723724083
 email:
   fromEmail: deboeck07011@gmail.com
   fromName: Funbags
@@ -13,9 +13,11 @@ fs:
     url: '@web/uploads'
 meta:
   __names__:
+    2dbf976c-da39-4117-8c57-a7914c343474: 'Price Category' # Price Category
     5a5d8da4-5048-417a-949e-82310d87a858: Funbags # Funbags
     6e95435f-b6f7-400c-b26d-273ca203bea7: Products # Products
     8c0b9121-2d47-4e0b-99d6-16250224f4ab: 'About Title' # About Title
+    020ebcb2-e611-49d3-9ba2-38433738bd97: 'Price Ranges' # Price Ranges
     0553be1b-41c9-4aa3-a97a-84f9449e48a6: Uploads # Uploads
     679aab28-b761-43bd-acf8-a822187c2b74: Home # Home
     831239cc-896f-4292-8653-de842081d524: Funbags # Funbags
@@ -25,6 +27,7 @@ meta:
     ae604e79-892c-4536-aacc-f5e3de11dbfb: Home # Home
     b4bea286-5d69-4b4b-abd4-69497b435efe: Simple # Simple
     bc3a72f1-c7c7-42f7-adc5-cf28d9b70a11: 'About Description' # About Description
+    c037cc3b-c92f-4688-814b-edbe8820ff01: 'Shop Title' # Shop Title
     d8b9a291-5cea-4702-ac39-3a15a20ec98b: 'Public Schema' # Public Schema
     dee0986a-bdb4-4519-8c7d-dc7ba7d8d8bf: 'Product Title' # Product Title
 plugins:

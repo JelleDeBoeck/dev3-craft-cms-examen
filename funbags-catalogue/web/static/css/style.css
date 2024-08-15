@@ -96,12 +96,16 @@ section {
 }
 
 .box {
-    background: #fff;
+    background: green;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column; /* Zorgt ervoor dat de inhoud netjes wordt uitgelijnd */
+    min-height: 400px; /* Consistente minimale hoogte */
 }
+
 
 .box img {
     width: 100%;

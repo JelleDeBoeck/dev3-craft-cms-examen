@@ -3,24 +3,54 @@
 {% block  content %}
 
 <section class="shop" id="shop">
-        <h1>Onze producten</h1>
-        <div class="container">
+        <h1>{{ entry.shopTitle }}</h1><br></br>
 
+        {% set selectedPriceRange = craft.app.request.getQueryParam('priceRange') %}
+
+        <div class="filter">
+        <form method="get" action="">
+        <label for="priceRange">Filter op prijs:</label>
+        <select id="priceRange" name="priceRange">
+            {% set priceRanges = craft.categories.group('priceRanges').all() %}
+            {% for range in priceRanges %}
+                <option value="{{ range.id }}" {% if selectedPriceRange == range.id %}selected{% endif %}>{{ range.title }}</option>
+            {% endfor %}
+        </select>
+        <button type="submit">Filter</button>
+    </form>
+
+    <div class="container">
         {% set products = craft.entries.section('shop').all() %}
-        {% for product in products %}
+        {% set filteredProducts = [] %}
 
+        {% for product in products %}
+            {% set isInRange = false %}
+            {% set productCategories = product.priceCategory.all() %}
+
+            {% for category in productCategories %}
+                {% if category.id == selectedPriceRange %}
+                    {% set isInRange = true %}
+                {% endif %}
+            {% endfor %}
+
+            {% if isInRange or not selectedPriceRange %}
+                {% set filteredProducts = filteredProducts|merge([product]) %}
+            {% endif %}
+        {% endfor %}
+
+        {% for product in filteredProducts %}
             <div class="box">
                 <img src="{{ product.productImage.one().url }}" alt="{{ product.productTitle }}">
                 <h4>{{ product.productTitle }}</h4>
-                <h5>€15.00</h5>
+                <h5>{% set price = product.productPrice %}
+                    {{ (price.getAmount() /100) | number_format(2, '.', ',') }} {{ price.getCurrency() }}</h5>
                 <div class="cart">
                     <a href="#"><i class='bx bx-cart'></i></a>
                 </div>
             </div>
         {% endfor %}
-  
-        </div>
-    </section>
+    </div>
+</section>
 
     <section class="about" id="about">
         <div class="about-content">
